@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/style.css">
+    <script src="app.js" defer></script>
+    <title>Progress Bar</title>
+</head>
+
+<body class="flex flex-col  w-screen h-screen items-center justify-evenly">
+    <h1 class="text-5xl font-bold font-mono text-border-filled border-b-4 border-border-empty py-2">Progress Bar</h1>
+    <main class=" flex flex-col justify-center items-center gap-8">
+        <div class="w-full flex gap-8 justify-between relative">
+            <div
+                class="circle border-4 border-border-filled w-16 aspect-square rounded-full flex items-center justify-center bg-white delay-300 duration-200">
+                1
+            </div>
+            <div
+                class="circle border-4 w-16 border-border-empty aspect-square rounded-full flex items-center justify-center bg-white delay-300 duration-200">
+                2
+            </div>
+            <div
+                class="circle border-4 w-16 border-border-empty aspect-square rounded-full flex items-center justify-center bg-white delay-300 duration-200">
+                3
+            </div>
+            <div
+                class="circle border-4 w-16 border-border-empty aspect-square rounded-full flex items-center justify-center bg-white delay-300 duration-200">
+                4
+            </div>
+            <hr class="absolute w-full border-border-empty border-2 top-[50%] -z-10">
+            <hr id="progress-bar"
+                class=" absolute border-border-filled border-2 top-[50%] -z-10 duration-700 ease-in-out">
+        </div>
+        <div class="w-full flex justify-around items-center ">
+            <button id="btn-prev"
+                class=" bg-cyan-400 text-white px-6 py-2 rounded-lg active:scale-95 active:bg-cyan-500 duration-500 ease-in-out disabled:bg-border-empty disabled:cursor-not-allowed shadow-md shadow-gray-300"
+                disabled>Prev</button>
+            <button id="btn-next"
+                class=" bg-cyan-400 text-white px-6 py-2 rounded-lg active:scale-95 active:bg-cyan-500 duration-500 ease-in-out disabled:bg-border-empty disabled:cursor-not-allowed shadow-md shadow-gray-300">Next</button>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active-class-div {
+  flex: 5;
+}
+.active-class-text {
+  opacity: 1;
+}
