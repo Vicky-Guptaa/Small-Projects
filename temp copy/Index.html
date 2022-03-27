@@ -14,7 +14,56 @@
 </head>
 
 <body>
+    <div class=" mx-12 card flex items-start mt-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 
+            <div class="bg-white rounded-lg border-2 border-cyan-400 hover:shadow-2xl ">
+
+                <!-- <a href="/explore/<%=rows[i].id%>"> <img class="p-2 h-58 w-96"
+                src="post-images/<%=rows[i].images%>" alt="images"></a> -->
+
+                <div class="px-2 py-4">
+                    <a href="/explore/<%=rows[i].id%>"> <img class="" src="./src/Img/image 1.png"
+                            alt="images"></a>
+                </div>
+                <div class="mt-2 border-l-4 border-cyan-300">
+                    <div class="flex justify-between">
+                        <a href="/explore/<%=rows[i].id%>">
+                            <header class="font-bold text-3xl ml-2">
+                                <!-- <%=rows[i].title%>  --> TITLE
+                            </header>
+                        </a>
+                        <a href="/explore/<%=rows[i].id%>">
+                            <p class="font-bold text-2xl mr-4">
+                                Rs PRICE
+                                <!--<%=rows[i].price%> -->
+
+                            </p>
+                        </a>
+                    </div>
+
+                    <a href="/explore/<%=rows[i].id%>">
+                        <p class="font-bold ml-2 mt-2">
+                            <!-- <%=rows[i].subject%>  -->
+                            SUBJECT
+                        </p>
+                    </a>
+
+                    <div class="flex justify-between mt-2 mb-2">
+                        <a href="/user/<%=rows[i].Googleid%>"><span class="ml-2">
+                                <!-- <%=rows[i].Name%> -->
+                                NAME
+                            </span></a>
+                        <span class="ml-2 text-right mr-3">
+                            <!-- <%=rows[i].postdate%> -->
+                            DATE
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 
 </html>
