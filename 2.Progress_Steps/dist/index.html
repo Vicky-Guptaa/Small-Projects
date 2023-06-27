@@ -5,42 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" href="../loading.png">
     <script src="app.js" defer></script>
     <title>Progress Bar</title>
     <link rel="stylesheet" href="assets/index.953e81a9.css">
 </head>
 
-<body class="flex flex-col  w-screen h-screen items-center justify-evenly">
-    <h1 class="text-5xl font-bold font-mono text-border-filled border-b-4 border-border-empty py-2">Progress Bar</h1>
-    <main class=" flex flex-col justify-center items-center gap-8">
-        <div class="w-full flex gap-8 justify-between relative">
+<body class="flex flex-col items-center w-screen h-screen justify-evenly">
+    <h1 class="py-2 font-mono text-5xl font-bold border-b-4 text-border-filled border-border-empty">Progress Bar</h1>
+    <main class="flex flex-col items-center justify-center gap-8 ">
+        <div class="relative flex justify-between w-full gap-8">
             <div
-                class="circle border-4 border-border-filled w-16 aspect-square rounded-full flex items-center justify-center bg-white delay-300 duration-200">
+                class="flex items-center justify-center w-16 duration-200 delay-300 bg-white border-4 rounded-full circle border-border-filled aspect-square">
                 1
             </div>
             <div
-                class="circle border-4 w-16 border-border-empty aspect-square rounded-full flex items-center justify-center bg-white delay-300 duration-200">
+                class="flex items-center justify-center w-16 duration-200 delay-300 bg-white border-4 rounded-full circle border-border-empty aspect-square">
                 2
             </div>
             <div
-                class="circle border-4 w-16 border-border-empty aspect-square rounded-full flex items-center justify-center bg-white delay-300 duration-200">
+                class="flex items-center justify-center w-16 duration-200 delay-300 bg-white border-4 rounded-full circle border-border-empty aspect-square">
                 3
             </div>
             <div
-                class="circle border-4 w-16 border-border-empty aspect-square rounded-full flex items-center justify-center bg-white delay-300 duration-200">
+                class="flex items-center justify-center w-16 duration-200 delay-300 bg-white border-4 rounded-full circle border-border-empty aspect-square">
                 4
             </div>
             <hr class="absolute w-full border-border-empty border-2 top-[50%] -z-10">
             <hr id="progress-bar"
                 class=" absolute border-border-filled border-2 top-[50%] -z-10 duration-700 ease-in-out">
         </div>
-        <div class="w-full flex justify-around items-center ">
+        <div class="flex items-center justify-around w-full ">
             <button id="btn-prev"
-                class=" bg-cyan-400 text-white px-6 py-2 rounded-lg active:scale-95 active:bg-cyan-500 duration-500 ease-in-out disabled:bg-border-empty disabled:cursor-not-allowed shadow-md shadow-gray-300"
+                class="px-6 py-2 text-white duration-500 ease-in-out rounded-lg shadow-md bg-cyan-400 active:scale-95 active:bg-cyan-500 disabled:bg-border-empty disabled:cursor-not-allowed shadow-gray-300"
                 disabled>Prev</button>
             <button id="btn-next"
-                class=" bg-cyan-400 text-white px-6 py-2 rounded-lg active:scale-95 active:bg-cyan-500 duration-500 ease-in-out disabled:bg-border-empty disabled:cursor-not-allowed shadow-md shadow-gray-300">Next</button>
+                class="px-6 py-2 text-white duration-500 ease-in-out rounded-lg shadow-md bg-cyan-400 active:scale-95 active:bg-cyan-500 disabled:bg-border-empty disabled:cursor-not-allowed shadow-gray-300">Next</button>
         </div>
     </main>
 </body>
